@@ -1,0 +1,3 @@
+[submodule "__submodules/libbson"]
+	path = __submodules/libbson
+	url = git@github.com:Convey-Compliance/libbson.git
