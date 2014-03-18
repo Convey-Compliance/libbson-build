@@ -232,7 +232,7 @@
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\__submodules\libbson\buildcmake\libbson.def" />
+    <None Include="..\__submodules\libbson\build\cmake\libbson.def" />
     <None Include="..\__submodules\libbson\src\bson\bson-config.h.in" />
     <None Include="..\__submodules\libbson\src\bson\bson-version.h.in" />
   </ItemGroup>

@@ -223,11 +223,11 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\__submodules\libbson\buildcmake\libbson.def">
-      <Filter>Source Files</Filter>
-    </None>
     <None Include="..\__submodules\libbson\src\bson\bson-config.h.in" />
     <None Include="..\__submodules\libbson\src\bson\bson-version.h.in" />
+    <None Include="..\__submodules\libbson\build\cmake\libbson.def">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="version.rc">
