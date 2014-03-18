@@ -96,6 +96,9 @@
     <ClCompile Include="..\__submodules\libbson\src\yajl\yajl_tree.c">
       <Filter>Source Files\yajl</Filter>
     </ClCompile>
+    <ClCompile Include="..\__submodules\libbson\src\bson\bson-value.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="bson-config.h">
@@ -220,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="..\__submodules\libbson\src\yajl\yajl_version.h">
       <Filter>Header Files\yajl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\__submodules\libbson\src\bson\bson-value.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

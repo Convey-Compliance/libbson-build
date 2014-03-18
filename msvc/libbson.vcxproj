@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -67,28 +67,28 @@
     <IncludePath>..\__submodules\libbson\src\bson;.\;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d32_v0-6-0</TargetName>
+    <TargetName>$(ProjectName)_d32_v0-6-5</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>..\__submodules\libbson\src\bson;.\;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d64_v0-6-0</TargetName>
+    <TargetName>$(ProjectName)_d64_v0-6-5</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>..\__submodules\libbson\src\bson;.\;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_r32_v0-6-0</TargetName>
+    <TargetName>$(ProjectName)_r32_v0-6-5</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>..\__submodules\libbson\src\bson;.\;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_r64_v0-6-0</TargetName>
+    <TargetName>$(ProjectName)_r64_v0-6-5</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -176,6 +176,7 @@
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-reader.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-string.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-utf8.c" />
+    <ClCompile Include="..\__submodules\libbson\src\bson\bson-value.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-writer.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson.c" />
     <ClCompile Include="..\__submodules\libbson\src\yajl\yajl.c" />
@@ -213,6 +214,7 @@
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-thread-private.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-types.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-utf8.h" />
+    <ClInclude Include="..\__submodules\libbson\src\bson\bson-value.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-writer.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson.h" />
     <ClInclude Include="..\__submodules\libbson\src\yajl\yajl_alloc.h" />
