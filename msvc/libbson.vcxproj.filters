@@ -16,11 +16,14 @@
     <Filter Include="Source Files\yajl">
       <UniqueIdentifier>{34db9f73-52b1-459e-89b6-e3d801b741dd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Config">
-      <UniqueIdentifier>{761bb995-1b00-4ba1-8895-85e4803499ab}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\yajl">
       <UniqueIdentifier>{167fc454-7c62-4829-bfcb-b138969b89ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\build-headers">
+      <UniqueIdentifier>{761bb995-1b00-4ba1-8895-85e4803499ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\build-headers-templates">
+      <UniqueIdentifier>{e0166e61-aeef-4bc0-98ad-46713645beb4}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -101,15 +104,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bson-config.h">
-      <Filter>Header Files\Config</Filter>
-    </ClInclude>
-    <ClInclude Include="bson-stdint.h">
-      <Filter>Header Files\Config</Filter>
-    </ClInclude>
-    <ClInclude Include="bson-version.h">
-      <Filter>Header Files\Config</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -227,12 +221,25 @@
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-value.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\__submodules\libbson-build-headers\bson-config.h">
+      <Filter>Header Files\build-headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\__submodules\libbson-build-headers\bson-stdint.h">
+      <Filter>Header Files\build-headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\__submodules\libbson-build-headers\bson-version.h">
+      <Filter>Header Files\build-headers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\__submodules\libbson\src\bson\bson-config.h.in" />
-    <None Include="..\__submodules\libbson\src\bson\bson-version.h.in" />
     <None Include="..\__submodules\libbson\build\cmake\libbson.def">
       <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\__submodules\libbson\src\bson\bson-config.h.in">
+      <Filter>Source Files\build-headers-templates</Filter>
+    </None>
+    <None Include="..\__submodules\libbson\src\bson\bson-version.h.in">
+      <Filter>Source Files\build-headers-templates</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
