@@ -1,0 +1,1 @@
+robocopy \\conveydev.com\files\dev\Repository\third-party-software-installers\cmake\ ..\cmake\ * /ZB /X /TEE /S
