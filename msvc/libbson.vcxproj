@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -66,28 +66,28 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d32_v1-0-1</TargetName>
+    <TargetName>$(ProjectName)_d32_v1-1-0</TargetName>
     <IncludePath>..\__submodules\libbson-build-headers;..\__submodules\libbson\src\bson;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_d64_v1-0-1</TargetName>
+    <TargetName>$(ProjectName)_d64_v1-1-0</TargetName>
     <IncludePath>..\__submodules\libbson-build-headers;..\__submodules\libbson\src\bson;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_r32_v1-0-1</TargetName>
+    <TargetName>$(ProjectName)_r32_v1-1-0</TargetName>
     <IncludePath>..\__submodules\libbson-build-headers;..\__submodules\libbson\src\bson;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\bin\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>..\intermediate\$(Platform)\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)_r64_v1-0-1</TargetName>
+    <TargetName>$(ProjectName)_r64_v1-1-0</TargetName>
     <IncludePath>..\__submodules\libbson-build-headers;..\__submodules\libbson\src\bson;..\__submodules\libbson\src\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -164,9 +164,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\__submodules\libbson\src\bson\bcon.c" />
+    <ClCompile Include="..\__submodules\libbson\src\bson\bson-atomic.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-clock.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-context.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-error.c" />
+    <ClCompile Include="..\__submodules\libbson\src\bson\bson-iso8601.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-iter.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-json.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-keys.c" />
@@ -175,6 +177,7 @@
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-oid.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-reader.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-string.c" />
+    <ClCompile Include="..\__submodules\libbson\src\bson\bson-timegm.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-utf8.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-value.c" />
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-version.c" />
@@ -204,6 +207,7 @@
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-context.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-endian.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-error.h" />
+    <ClInclude Include="..\__submodules\libbson\src\bson\bson-iso8601-private.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-iter.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-json.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-keys.h" />
@@ -216,6 +220,7 @@
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-stdint-win32.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-string.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-thread-private.h" />
+    <ClInclude Include="..\__submodules\libbson\src\bson\bson-timegm-private.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-types.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-utf8.h" />
     <ClInclude Include="..\__submodules\libbson\src\bson\bson-value.h" />
