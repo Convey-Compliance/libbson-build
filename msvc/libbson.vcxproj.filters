@@ -102,9 +102,6 @@
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-value.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\__submodules\libbson\src\bson\bson-version.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-atomic.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -112,6 +109,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\__submodules\libbson\src\bson\bson-timegm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\__submodules\libbson\src\bson\bson-version-functions.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -258,6 +258,9 @@
     </None>
     <None Include="..\__submodules\libbson\src\bson\bson-version.h.in">
       <Filter>Source Files\build-headers-templates</Filter>
+    </None>
+    <None Include="..\__submodules\libbson\src\bson\uncrustify.cfg">
+      <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
